@@ -52,7 +52,7 @@ function Bio() {
     setAnswer("Loading your answer... \n It might take upto 10 seconds");
     try {
       const response = await axios({
-        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=AIzaSyBbe5PQ4cEy7n5r9NQit4fdzlE7NQb5AOg`,
+        url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=API-KEY`,
         method: "post",
         data: {
           contents: [{ parts: [{ text:systemPrompt+ question }] }],
